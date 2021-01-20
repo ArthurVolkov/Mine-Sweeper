@@ -1,2 +1,2 @@
 # Mine-Sweeper
-Mine Sweeper game using JavaScript
+Minesweeper game using JavaScript
