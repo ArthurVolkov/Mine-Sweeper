@@ -1,0 +1,108 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../img/background.jpg);
+    min-height: 95vh;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-family: 'Bangers', cursive;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.level-bar {
+    margin: 1% 22% 0% 22%;
+    width: 60%;
+    height: 3%;
+}
+
+.level-bar button {
+    display: inline-block;
+    border: solid darkslategray;
+    margin: .5% .5%;
+    padding: 1% 1%;
+    width: 30%;
+    height: 50%;
+    background-color: yellowgreen;
+    opacity: .8;
+    border-radius: 10px;
+    font-size: x-large;
+    font-family: 'Bangers', cursive;
+    cursor: pointer;
+    outline: none;
+
+    box-shadow: inset -1px 3px 8px 5px #ee8732, 2px 5px 16px 0px
+                #27680d, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+.header {
+    margin: .0% 22%;
+    width: 60%;
+    height: 2%;
+}
+
+.header div {
+    border: solid darkslategray;
+    display: inline-block;
+    margin: .5% .5%;
+    padding: 1% 1%;
+    width: 30%;
+    height: 30%;
+    background-color: yellowgreen;
+    opacity: .8;
+    border-radius: 10px;
+    text-align: center;
+    font-size: x-large;
+
+    
+    box-shadow: inset -1px 3px 8px 5px #ee8732, 2px 5px 16px 0px
+                #27680d, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+.board-container {
+    width: 50%;
+    margin: 0 auto;
+    
+}
+
+.board-container table{
+    margin: auto;
+}
+
+.cell {
+    background-color: gainsboro;
+    font-size: x-large;
+    opacity: .8;
+    width:38px;
+    height:38px;
+    text-align: center;
+    cursor: crosshair;
+    /* box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); */
+    box-shadow: 3px 4px 5px 6px rgb(88, 87, 87);
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 
+                 0 -18px 40px #F00, 2px 2px 2px rgba(206,89,55,0);
+}
+
+.cell.shown {
+    background-color: lightsalmon;
+
+}
+
+.cell:hover {
+    box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+.board-container table {
+    border-spacing: 0px;
+}
+
+.clock {
+    text-align: right;
+}
