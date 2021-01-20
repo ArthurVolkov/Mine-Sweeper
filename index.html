@@ -11,14 +11,23 @@
 
 <body onload="initGame()">
 
+    <div class="level-bar">
+        <button onclick="levelOption(4, 2)">Beginner (4x4) 💣x 2</button>
+        <button onclick="levelOption(8, 12)">Medium (8x8) 💣x 12</button>
+        <button onclick="levelOption(12, 30)">Expert (12x12) 💣x 30</button>
+
+    </div>
+
     <div class="header">
         <div class="flags"></div>
-        <div class="smyle"></div>
+        <div class="smyle" onclick="restart()"></div>
         <div class="timer">000
             <!-- <span class="minutes">0</span>.
             <span class="seconds">00</span> -->
         </div>
     </div>
+
+
 
     <div class="board-container"></div>
 

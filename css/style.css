@@ -3,6 +3,20 @@
     box-sizing: border-box;
 }
 
+body {
+    background-image: url(../img/background.jpg);
+    min-height: 95vh;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-family: 'Bangers', cursive;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 .header {
     margin: 2% 25%;
     width: 50%;
@@ -24,9 +38,12 @@
 }
 
 .cell {
+    background-color: gainsboro;
+    opacity: .7;
     width:40px;
     height:40px;
     text-align: center
+
 }
 
 .board-container table {
