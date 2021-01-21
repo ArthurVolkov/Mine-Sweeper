@@ -14,9 +14,15 @@
 <body onload="initGame()">
 
     <div class="level-bar">
-        <button onclick="levelOption(4, 2)">Beginner (4x4) 💣x 2</button>
-        <button onclick="levelOption(8, 12)">Medium (8x8) 💣x 12</button>
-        <button onclick="levelOption(12, 30)">Expert (12x12) 💣x 30</button>
+        <button onclick="levelOption(4, 2)">Beginner (4x4) 💣x 2
+            <p class="beginner-score">highscore: <span> 0</span></p>
+        </button>
+        <button onclick="levelOption(8, 12)">Medium (8x8) 💣x 12
+            <p class="medium-score">highscore: <span> 0</span></p>
+        </button>
+        <button onclick="levelOption(12, 30)">Expert (12x12) 💣x 30
+            <p class="expert-score">highscore: <span> 0</span></p>
+        </button>
 
     </div>
 
@@ -27,17 +33,14 @@
             <button class="hints" onclick="hint(this)"></button>
             <button class="hints last" onclick="hint(this)"></button>
             <button class="smyle" onclick="restart()"></button>
-            <button class="safe-click" onclick="safeClick()">safe</button>
+            <button class="safe-click" onclick="safeClick()">safe:
+                <span class="safe-count">3</span>
+            </button>
         </div>
         <div class="side-buttons">
-            <span class="timer"></span>  ⏱  
+            <span class="timer"></span> ⏱
             <button class="undo" onclick="undo()">🔙</button>
         </div>
-    </div>
-
-    <div class="tools">
-        <!-- <button class="undo" onclick="undo()">Undo</button> -->
-        <!-- <button class="lives"></button> -->
     </div>
 
     <div class="board-container"></div>
