@@ -12,7 +12,6 @@
 </head>
 
 <body onload="initGame()">
-
     <div class="level-bar">
         <button onclick="levelOption(4, 2)">Beginner (4x4) 💣x 2
             <p class="beginner-score">highscore: <span> 0</span></p>
@@ -27,26 +26,43 @@
     </div>
 
     <div class="header">
-        <div class="side-buttons"><span class="flags"></span><span class="lives"></span></div>
+        <div class="side-buttons"><span class="flags"></span>
+            <span class="lives"></span>
+            <button class="toggle-lives" onclick="livesToggle(this)">❌</button>
+            <div class="tip">Click to enable the bonus of 3 lives</div>
+        </div>
         <div class="features">
             <button class="hints" onclick="hint(this)"></button>
             <button class="hints" onclick="hint(this)"></button>
             <button class="hints last" onclick="hint(this)"></button>
+            <button class="toggle-hints" onclick="hintsToggle(this)">❌</button>
+            <div class="tip">Click to enable the option to see <br/> what around the cell you click</div>
             <button class="smyle" onclick="restart()"></button>
             <button class="safe-click" onclick="safeClick()">safe:
                 <span class="safe-count">3</span>
             </button>
+            <span>
+                <button class="toggle-safe" onclick="safeToggle(this)">❌</button>
+                <div class="tip">Click to enable option to see the cell you <br?>
+                    can click without chans to reveal the mine
+                </div>
+            </span>
         </div>
         <div class="side-buttons">
             <span class="timer"></span> ⏱
             <button class="undo" onclick="undo()">🔙</button>
+            <button class="toggle-undo" onclick="undoToggle(this)">❌</button>
+            <div class="tip">click to the enable the option to go back in time</div>
+
         </div>
     </div>
 
     <div class="board-container"></div>
 
     <script src="js/utils.js"></script>
+    <script src="js/render.js"></script>
+    <script src="js/bonusFunctions.js"></script>
+    <script src="js/toggles.js"></script>
     <script src="js/main.js"></script>
 </body>
-
 </html>
